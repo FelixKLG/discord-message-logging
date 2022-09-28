@@ -2,10 +2,11 @@
   "name": "djs_debugging",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "type": "module",
   "scripts": {
-    "start": "node ./src/main.js"
+    "start": "node ./src/main.js",
+    "postinstall": "npx prisna generate && npx prisma db push"
   },
   "keywords": [],
   "author": "",
@@ -18,5 +19,9 @@
   "devDependencies": {
     "eslint": "^8.24.0",
     "prisma": "^4.4.0"
-  }
+  },
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=7"
+}
 }
